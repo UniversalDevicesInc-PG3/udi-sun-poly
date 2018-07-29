@@ -1,0 +1,9 @@
+# controller
+ND-SUNCTRL-NAME = Sun Position
+ND-SUNCTRL-ICON = Weather
+CMD-CTRL-QUERY-NAME = Query
+ST-CTRL-ST-NAME = NodeServer Online
+ST-CTRL-GV0-NAME = Azimuth
+ST-CTRL-GV1-NAME = Elevation
+ST-CTRL-GV2-NAME = Zenith
+ST-CTRL-GV3-NAME = Moon Phase

@@ -1,0 +1,21 @@
+{
+    "name": "Sun",
+    "docs": "https://github.com/exking/udi-sun-poly",
+    "type": "python3",
+    "executable": "sun-poly.py",
+    "install": "install.sh",
+    "description": "Sun and Moon tracker",
+    "notice": "",
+    "shortPoll": "30",
+    "longPoll": "60",
+    "credits": [
+        {
+            "title": "NodeServer to indicate Sun position and Moon phase",
+            "author": "xKing",
+            "version": "0.0.1",
+            "date": "July 28, 2018",
+            "source": "https://github.com/exking/udi-sun-poly",
+            "license": "https://raw.githubusercontent.com/exking/udi-sun-poly/master/LICENSE"
+        }
+    ]
+}

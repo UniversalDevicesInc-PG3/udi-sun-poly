@@ -1,0 +1,21 @@
+<nodeDefs>
+    <nodeDef id="SUNCTRL" nls="CTRL">
+        <editors />
+        <sts>
+            <st id="ST" editor="BOOL" />
+            <st id="GV0" editor="DEGREE" />
+            <st id="GV1" editor="DEGREE" />
+            <st id="GV2" editor="DEGREE" />
+            <st id="GV3" editor="MOONPH" />
+        </sts>
+        <cmds>
+            <sends>
+                <cmd id="DON" />
+                <cmd id="DOF" />
+	    </sends>
+            <accepts>
+                <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+</nodeDefs>
