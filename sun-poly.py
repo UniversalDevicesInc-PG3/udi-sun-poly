@@ -49,6 +49,8 @@ class Controller(polyinterface.Controller):
         self.updateInfo()
             
     def updateInfo(self):
+        if self.location is None:
+            return
         self.setDriver('GV0', round(self.location.solar_azimuth(), 2))
         self.setDriver('GV1', round(self.location.solar_elevation(), 2))
         self.setDriver('GV2', round(self.location.solar_zenith(), 2))
