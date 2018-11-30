@@ -79,7 +79,7 @@ class Controller(polyinterface.Controller):
 
     id = 'SUNCTRL'
     commands = {'QUERY': query}
-    drivers = [{'driver': 'ST', 'value': 0, 'uom': 2},
+    drivers = [{'driver': 'ST', 'value': 1, 'uom': 2},
                {'driver': 'GV0', 'value': 0, 'uom': 14},
                {'driver': 'GV1', 'value': 0, 'uom': 14},
                {'driver': 'GV2', 'value': 0, 'uom': 14},
