@@ -2,7 +2,7 @@
 
 import polyinterface
 import sys
-from astral import Location
+from astral.location import Location
 from tzlocal import get_localzone
 import datetime
 
@@ -51,10 +51,11 @@ class Controller(polyinterface.Controller):
     def updateInfo(self):
         if self.location is None:
             return
+        ts_now = datetime.datetime.now(self.tz)
         self.setDriver('GV0', round(self.location.solar_azimuth(), 2))
         self.setDriver('GV1', round(self.location.solar_elevation(), 2))
-        self.setDriver('GV2', round(self.location.solar_zenith(), 2))
-        self.setDriver('GV3', round(self.location.moon_phase(rtype=float), 2))
+        self.setDriver('GV2', round(self.location.solar_zenith(ts_now), 2))
+        self.setDriver('GV3', round(self.location.moon_phase(), 2))
         date_now = datetime.date.today()
         if date_now != self.today:
             LOGGER.debug('It\'s a new day! Calculating sunrise and sunset...')

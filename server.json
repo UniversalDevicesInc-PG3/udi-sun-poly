@@ -12,7 +12,7 @@
         {
             "title": "NodeServer to indicate Sun position and Moon phase",
             "author": "xKing",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "date": "July 28, 2018",
             "source": "https://github.com/exking/udi-sun-poly",
             "license": "https://raw.githubusercontent.com/exking/udi-sun-poly/master/LICENSE"
