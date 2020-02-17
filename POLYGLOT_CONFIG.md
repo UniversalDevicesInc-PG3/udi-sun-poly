@@ -1,4 +1,4 @@
-# UDI Polyglot v2 SUn Poly
+# UDI Polyglot v2 Sun Poly
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/exking/udi-sun-poly/blob/master/LICENSE)
 
