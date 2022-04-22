@@ -1,6 +1,6 @@
 <editors>
     <editor id="CONN">
-        <range uom="25" subset="0,1,2" nsl="E_CONN" />
+        <range uom="25" subset="0,1,2" nls="E_CONN" />
     </editor>
     <editor id="DEGREE">
         <range uom="14" min="-360" max="360" prec="2" />
