@@ -96,7 +96,7 @@ class Controller(udi_interface.Node ):
             self.updateInfo()
             
     def updateInfo(self):
-        if self.location is None:
+        if self.location is None or not self.configured:
             return
         ts_now = datetime.datetime.now(self.tz)
         self.setDriver('GV0', round(self.location.solar_azimuth(), 2))
