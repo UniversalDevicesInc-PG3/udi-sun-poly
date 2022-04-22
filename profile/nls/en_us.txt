@@ -8,7 +8,7 @@ ST-CTRL-GV1-NAME = Elevation
 ST-CTRL-GV2-NAME = Zenith
 ST-CTRL-GV3-NAME = Moon Phase
 
-E_CONN-0 = Connected
-E_CONN-1 = Disconnected
+E_CONN-0 = Disconnected
+E_CONN-1 = Connected
 E_CONN-2 = Failed
 

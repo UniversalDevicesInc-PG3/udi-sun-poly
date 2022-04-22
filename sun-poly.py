@@ -82,6 +82,7 @@ class Controller(udi_interface.Node ):
 
     def start(self):
         LOGGER.info('Started Sun Position')
+        self.poly.updateProfile()
 
         while not self.configured:
             time.sleep(1000)
