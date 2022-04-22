@@ -2,6 +2,7 @@
 
 import udi_interface
 import sys
+import time
 from astral.location import Location
 from tzlocal import get_localzone
 import datetime
@@ -37,6 +38,11 @@ class Controller(udi_interface.Node ):
         self.configured = False
         valid = True
 
+        self.tz = get_localzone()
+        self.today = datetime.date.today()
+        self.location = Location()
+        self.location.timezone = str(self.tz)
+
         if 'longitude' in params:
             if params['longitude'] == '':
                 valid = False
@@ -63,10 +69,10 @@ class Controller(udi_interface.Node ):
             self.location.elevation = 0
 
         if valid:
-            self.tz = get_localzone()
-            self.today = datetime.date.today()
-            self.location = Location()
-            self.location.timezone = str(self.tz)
+            #self.tz = get_localzone()
+            #self.today = datetime.date.today()
+            #self.location = Location()
+            #self.location.timezone = str(self.tz)
             self.sunrise = self.location.sunrise()
             self.sunset = self.location.sunset()
             ts_now = datetime.datetime.now(self.tz)
@@ -78,7 +84,7 @@ class Controller(udi_interface.Node ):
         LOGGER.info('Started Sun Position')
 
         while not self.configured:
-            sleep(1000)
+            time.sleep(1000)
 
         self.updateInfo()
 
