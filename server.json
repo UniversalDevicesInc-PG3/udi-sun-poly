@@ -1,6 +1,6 @@
 {
     "name": "Sun",
-    "docs": "https://github.com/exking/udi-sun-poly",
+    "docs": "https://github.com/UniversalDevicesInc-PG3/udi-sun-poly/master/blob/README.md",
     "type": "python3",
     "executable": "sun-poly.py",
     "install": "install.sh",
@@ -12,9 +12,9 @@
         {
             "title": "NodeServer to indicate Sun position and Moon phase",
             "author": "xKing",
-            "version": "0.0.2",
-            "date": "July 28, 2018",
-            "source": "https://github.com/exking/udi-sun-poly",
+            "version": "0.0.3",
+            "date": "April 22, 2022",
+            "source": "https://github.com/UniversalDevicesInc-PG3/udi-sun-poly",
             "license": "https://raw.githubusercontent.com/exking/udi-sun-poly/master/LICENSE"
         }
     ]
