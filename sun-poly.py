@@ -80,7 +80,7 @@ class Controller(udi_interface.Node ):
         while not self.configured:
             sleep(1000)
 
-       self.updateInfo()
+        self.updateInfo()
 
     def stop(self):
         LOGGER.info('Sun Position is stopping')
